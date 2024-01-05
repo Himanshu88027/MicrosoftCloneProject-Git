@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    font-family: Segoe UI;
+}
+
+/* .slide_lg{
+    border: 2px solid red;
+    height: 28rem;
+    width: 100%;
+} */
+.cen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem;
+    text-decoration: underline;
+}

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="navbar flex justify-between mx-4 my-4 md:mx-20">
+        <div class="flex space-x-5 justify-center items-center md:order-2 md:absolute md:right-40">
+            <div class=" md:hidden">
+                <div class="line h-0.5 w-6 my-1 bg-black"></div>
+                <div class="line h-0.5 w-6 my-1 bg-black"></div>
+                <div class="line h-0.5 w-6 my-1 bg-black"></div>
+            </div>
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass transform scale-x-[-1]"></i>
+            </div>
+        </div>
+        <div class="logo-container flex justify-center items-center space-x-2 md:order-1">
+            <div id="logo">
+                <!-- <i class="fa-brands fa-microsoft scale-150"></i> -->
+                <img class="object-cover w-28" src="/assets/microsoft.png" alt="">
+            </div>
+            <!-- <div class="microsoft font-semibold text-xl text-slate-500">
+                Microsoft
+            </div> -->
+            <div class="features">
+                <div class="hidden cursor-pointer md:flex text-sm space-x-5 mx-6">
+                    <div>Microsoft 365</div>
+                    <div>Teams</div>
+                    <div>Copilot</div>
+                    <div>Windows</div>
+                    <div class="hidden min-[885px]:block">Surface</div>
+                    <div class="hidden min-[940px]:block">Xbox</div>
+                    <div class="hidden min-[990px]:block">Deals</div>
+                    <div class="hidden min-[1100px]:block">Small Business</div>
+                    <div class="hidden min-[1100px]:block">Support</div>
+                    <div class="min-[1100px]:hidden">More</div>
+                </div>
+            </div>
+        </div>
+        <div class="account md:order-3">
+            <div class="cart space-x-5 scale-110">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <i class="fa-regular fa-circle-user scale-150"></i>
+            </div>
+        </div>
+    </div>
+    <div class="discount w-full h-20 md:h-16 bg-[#6B0E34] text-white flex justify-center items-center">
+        <div class="text w-96 text-center flex justify-center md:w-auto">
+            <p class="w-80 font-semibold md:w-full">Buy now, pay later. As low as 0% APR + free 60-day returns</p>
+        </div>
+        <div class="buy_arrow h-20 md:h-16 md:mx-2 w-8 md:justify-start text-2xl flex items-center">></div>
+    </div>
+    <div class="slides lg:hidden">
+        <div class="slide flex flex-col-reverse mx-1">
+            <div class="left relative shadow-md h-72 md:py-8 bg-white md:mx-3 md:bottom-16 md:shadow-lg z-10">
+                <div class="left_inner my-5 mx-8 md:mx-16">
+                    <h1 class="text-[#780E34] font-semibold">Countdown Sale</h1>
+                    <p class="text-3xl font-semibold">Save up to $100 on select Xbox Series X</p>
+                    <p class="my-3">Clock’s ticking—score amazing savings on the fastest, most powerful Xbox yet.
+                        Countdown Sale deal
+                        ends 12/31.</p>
+                    <button class="text-white bg-black px-4 py-2 md:my-5 rounded-sm"><a href="https://www.google.com">Shop
+                            Xbox Series X</a></button>
+                    <!-- <button class="text-white bg-black absolute bottom-5 md:bottom-11 px-4 py-2 rounded"><a
+                            href="https://www.google.com">Shop Xbox Series X</a></button> -->
+                </div>
+            </div>
+            <div class="right -z-10">
+                <img class="w-full" src="assets/xboxsm.jpeg" alt="xbox">
+            </div>
+        </div>
+    </div>
+    <div class="slide_lg hidden lg:flex">
+        <div class="relative flex">
+            <img src="/assets/xbox.jpeg" alt="">
+            <div class="absolute left-32 top-40 h-64 w-96">
+                <h1 class="text-[#780E34] font-semibold">Countdown Sale</h1>
+                <p class="text-3xl font-semibold">Save up to $100 on select<br /> Xbox Series X</p>
+                <p class="my-3">Clock’s ticking—score amazing savings on the fastest, most powerful Xbox yet. Countdown
+                    Sale deal
+                    ends 12/31.</p>
+                <button class="text-white bg-black absolute bottom-4 px-4 py-2 rounded-sm"><a
+                        href="https://www.google.com">Shop Xbox Series X</a></button>
+            </div>
+        </div>
+    </div>
+    <div class="second-page h-screen w-full">
+        <div class="slide_bar cursor-pointer flex justify-center items-center space-x-7 h-16">
+            <i class="fa-regular fa-circle-pause scale-125"></i>
+            <i class="fa-solid fa-less-than"></i>
+            <i class="fa-solid fa-circle scale-75"></i>
+            <i class="fa-regular fa-circle scale-75"></i>
+            <i class="fa-solid fa-greater-than"></i>
+        </div>
+        <div class="shop text-center flex flex-col lg:flex-row lg:justify-center lg:my-4 items-center">
+            <div class="device cen">
+                <img class="object-cover w-8" src="/assets/device.svg" alt="">
+                <a href="#">Shop Surface devices</a>
+            </div>
+            <div class="xbox cen">
+                <img class="object-cover w-8" src="/assets/xboxconsole.svg" alt="">
+                <a href="#">Shop Xbox games and consoles</a>
+            </div>
+            <div class="acc cen">
+                <img class="object-cover w-8" src="/assets/acc.svg" alt="">
+                <a href="#">Shop for accessories</a>
+            </div>
+            <div class="business cen">
+                <img class="object-cover w-8" src="/assets/business.svg" alt="">
+                <a href="#">Shop for your business</a>
+            </div>
+            <div class="micro cen">
+                <img class="object-cover w-8" src="/assets/micro.svg" alt="">
+                <a href="#">Choose your Microsoft 365</a>
+            </div>
+        </div>
+        <div class="products lg:mx-8 grid min-[585px]:grid-cols-2 min-[585px]:grid-flow-row min-[1080px]:grid-cols-4">
+            <div class="laptop1 mx-4 my-2 min-[585px]:my-1.5">
+                    <img class="object-cover w-full min-[585px]:my-0.5" src="assets/content.webp" alt="">
+                <div class="surface_laptop mx-1 min-[585px]:flex min-[585px]:flex-col min-[585px]:my-12">
+                    <h1 class="text-2xl my-2 font-semibold">Surface Laptop 5</h1>
+                    <p>Sleek portability and multitasking speed powered by 12th Gen Intel® Core, with Windows 11.</p>
+                    <h2 class="text-[#780E34] my-7 font-semibold">Shop Surface Laptop 5 ></h2>
+                </div>
+            </div>
+            <div class="laptop2 mx-4 my-2">
+                <img class="object-cover w-full" src="/assets/laptop.avif" alt="">
+                <button class="bg-[#780E34] font-semibold text-white px-3 py-1 my-3">New</button>
+                <div class="surface_laptop mx-1 min-[585px]:flex min-[585px]:flex-col">
+                    <h1 class="text-2xl font-semibold">Save up to $400 on Surface Laptop Studio 2</h1>
+                    <p>Cutting-edge design meets incredible performance in this versatile laptop perfect for everything from creativity to entertainment. Select devices on sale now. Offer ends 1/7.</p>
+                    <h2 class="text-[#780E34] my-7 font-semibold">Shop Surface Studio Laptop 5 ></h2>
+                </div>
+            </div>
+            <div class="series-x mx-4 my-2">
+                    <img class="object-cover w-full min-[585px]: my-0.5" src="assets/Series-X.webp" alt="">
+                <div class="surface_laptop mx-1 min-[585px]:flex min-[585px]:flex-col min-[585px]:my-12">
+                    <h1 class="text-2xl my-2 font-semibold">Xbox Series X</h1>
+                    <p>The fastest, most powerful Xbox ever.</p>
+                    <h2 class="text-[#780E34] my-7 font-semibold">Shop Surface Laptop 5 ></h2>
+                </div>
+            </div>
+            <div class="dream-x mx-4 my-2">
+                <img class="object-cover w-full min-[585px]: my-0.5" src="/assets/dream.avif" alt="">
+                <div class="surface_laptop mx-1 min-[585px]:flex min-[585px]:flex-col min-[585px]:my-12">
+                    <h1 class="text-2xl my-2 font-semibold">Power your dreams</h1>
+                    <p>Introducing Xbox Series S in Carbon Black, now with a 1 TB SSD. Experience next-gen speed and performance.</p>
+                    <h2 class="text-[#780E34] my-7 font-semibold">Shop now ></h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="next-slides mx-4 lg:hidden my-12">
+            <div class="next-slide flex flex-col-reverse mx-1">
+                <div class="left relative shadow-md h-72 md:py-8 bg-white md:mx-3 md:bottom-16 md:shadow-lg z-10">
+                    <div class="next-left_inner my-5 mx-8 md:mx-16">
+                        <p class="text-3xl font-semibold">Xbox Controllers</p>
+                        <p class="my-3">Elite, wireless, adaptive—find the controller that fits your style of play</p>
+                        <button class="text-white bg-black px-4 py-2 md:my-5 rounded-sm"><a href="https://www.google.com">Shop now</a></button>
+                    </div>
+                </div>
+                <div class="right -z-10">
+                    <img class="w-full" src="assets/controller-sm.jpg" alt="xbox">
+                </div>
+            </div>
+        </div>
+        <div class="slide_lg hidden lg:flex justify-center lg:mx-4">
+            <div class="relative flex">
+                <img class="object-cover w-full" src="/assets/controller.jpeg" alt="">
+                <div class="absolute left-32 top-40 h-64 w-96">
+                    <p class="text-3xl font-semibold">Xbox Controllers</p>
+                    <p class="my-3">Elite, wireless, adaptive—find the controller that fits your style of play</p>
+                    <button class="text-white bg-black absolute bottom-4 px-4 py-2 rounded-sm"><a
+                            href="https://www.google.com">Shop Xbox Series X</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="products2 my-20 lg:mx-8">
+            <h1 class="font-semibold text-3xl mx-3 my-1">For Business</h1>
+            <div class="products grid min-[585px]:grid-cols-2 min-[585px]:grid-flow-row min-[1080px]:grid-cols-4">
+                <div class="surface9 mx-4 my-2">
+                        <img class="object-cover w-full min-[585px]:my-0.5" src="assets/surface 9 pro.jpeg" alt="">
+                    <div class="surface_laptop mx-1 min-[585px]:flex min-[585px]:flex-col">
+                        <h1 class="text-2xl my-2 font-semibold">Surface Pro 9 for Business</h1>
+                        <p>Get next-level security with Surface Pro 9 for Business and Windows 11 Pro to help ensure your information is protected.</p>
+                        <h2 class="text-[#780E34] my-7 font-semibold">Surface Pro 9 for Business ></h2>
+                    </div>
+                </div>
+                <div class="microsoft365 mx-4 my-2">
+                    <img class="object-cover w-full" src="/assets/microsoft365.webp" alt="">
+                    <!-- <button class="bg-[#780E34] font-semibold text-white px-3 py-1 my-3">New</button> -->
+                    <div class="surface_laptop mx-1 min-[585px]:flex min-[585px]:flex-col">
+                        <h1 class="text-2xl my-2 font-semibold">Try Microsoft 365 for free</h1>
+                        <p>Get Microsoft Teams, secure cloud storage, and premium apps across devices with a free one-month Microsoft 365 Business Standard trial.</p>
+                        <h2 class="text-[#780E34] my-7 font-semibold">Start your free trial ></h2>
+                    </div>
+                </div>
+                <div class="ai mx-4 my-2">
+                        <img class="object-cover w-full min-[585px]: my-0.5" src="assets/ai.avif" alt="">
+                    <div class="surface_laptop mx-1 min-[585px]:flex min-[585px]:flex-col">
+                        <h1 class="text-2xl my-2 font-semibold">Join the era of AI</h1>
+                        <p>Create, communicate, and code with the latest Microsoft AI solutions.</p>
+                        <h2 class="text-[#780E34] my-7 font-semibold">Fxplore AI solutions ></h2>
+                    </div>
+                </div>
+                <div class="365cloud mx-4 my-2">
+                    <img class="object-cover w-full min-[585px]: my-0.5" src="/assets/365cloud.webp" alt="">
+                    <div class="surface_laptop mx-1 min-[585px]:flex min-[585px]:flex-col">
+                        <h1 class="text-2xl my-2 font-semibold">Welcome to your Windows 365 Cloud PC</h1>
+                        <p>Securely stream your Windows experience from the Microsoft cloud to any device.</p>
+                        <h2 class="text-[#780E34] my-7 font-semibold">Get it today ></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="div"></div>
+</body>
+
+</html>
